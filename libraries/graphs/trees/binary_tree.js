@@ -8,7 +8,7 @@ const mutateNodes = function(node, mutationFunction) {
     return node
 }
 
-const IterativeDfs = function(node) {
+const iterativeDfs = function(node) {
     var stack = [node];
     while (stack.length > 0) {
         var current = stack.pop();
