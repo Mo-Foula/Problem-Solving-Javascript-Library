@@ -30,7 +30,7 @@ topic (In plural) or Verb (with ing)-> subtopic -> file
 The file should exports the **needed** functions not all functions, we are not exporting everything we want to use the algorithm as end users.
 
 ## Naming conventions
-Use snake_case in files naming, and provide description for each function usage and importance in a readme file with every leaf file (if not there, create one).
+Use snake_case in files naming, and provide description for each function usage and importance in a readme file with every leaf file (if not there, create one) [Example](libraries/searching/binary_search.md).
 
 ### Titles
 Pr title (and commit message) in following format:
@@ -45,6 +45,22 @@ or
 ```
 doc(topic/subtopic): message
 ```
+### Steps
+To make a pull request on a GitHub repository that you are not a collaborator in, you will need to follow these steps:
+
+1. Fork the repository: Click on the "Fork" button located at the top right corner of the repository's page. This will create a copy of the repository in your own GitHub account.
+
+2. Clone the forked repository: Go to your forked repository and click on the "Code" button. Copy the HTTPS or SSH link and use it to clone the repository to your local machine.
+
+3. Create a new branch: Switch to a new branch on your local machine using git checkout -b new-branch-name.
+
+4. Make changes and commit them: Make the changes that you want to contribute to the project and commit them using git add and git commit.
+
+5. Push the changes to your forked repository: Push the changes to the new branch you just created using git push origin new-branch-name.
+
+6. Create a pull request: Go to the original repository and click on the "Pull requests" tab. Click on the "New pull request" button and select your forked repository and the new branch you created. Fill in the details of your pull request, including a title and description of your changes.
+
+7. Submit the pull request: Click on the "Create pull request" button to submit your pull request to the repository. The repository owner or collaborators can review your changes and decide whether to merge them into the main codebase.
 
 
 <br>
