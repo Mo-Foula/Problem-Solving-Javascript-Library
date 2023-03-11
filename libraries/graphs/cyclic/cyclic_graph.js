@@ -5,7 +5,7 @@ const hasCycle = function(head) {
         slowPtr = slowPtr.next
         fastPtr = fastPtr.next.next
         if (fastPtr == slowPtr){
-            return true
+            return fastPtr
         }
     }
     return false
