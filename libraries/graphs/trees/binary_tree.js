@@ -8,6 +8,18 @@ const mutateNodes = function(node, mutationFunction) {
     return node
 }
 
+const IterativeDfs = function(node) {
+    var stack = [node];
+    while (stack.length > 0) {
+        var current = stack.pop();
+        if (current.right)
+            stack.push(current.right);
+        if (current.left)
+            stack.push(current.left);
+    }
+}
+
 module.exports = {
-    mutateNodes
+    mutateNodes,
+    IterativeDfs
 }
