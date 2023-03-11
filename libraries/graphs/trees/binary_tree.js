@@ -8,6 +8,15 @@ const mutateNodes = function(node, mutationFunction) {
     return node
 }
 
+
+const maxDepth = function(node) {
+    if (root === null) {
+       return 0;
+     }
+     return Math.max(maxDepth(root.left),  maxDepth(root.right)) + 1;
+   }
+
 module.exports = {
-    mutateNodes
+    mutateNodes,
+    maxDepth
 }
