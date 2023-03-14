@@ -18,7 +18,18 @@ const replacePartOfArrayWithAnotherArray = function ({ array, newArray, firstInd
     return tempArray
 }
 
+/*
+@param arrays: array of arrays that will be concatenated
+*/
+const concatArrays = function (arrays) {
+
+    // [].concat.apply([], [array1, array2, ...])
+    return [].concat.apply([], arrays)
+}
+
+
 module.exports = {
     copyArray,
     replacePartOfArrayWithAnotherArray,
+    concatArrays,
 }
